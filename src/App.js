@@ -9,6 +9,8 @@ function App() {
   return (
     <div className='App'>
       <SignedOut>
+        <h1>Welcome to Secure Me</h1>
+        <p>Secure your passwords and photos with AES encryption</p>
         <div className=''>
           <SignInButton />
         </div>

@@ -1,11 +1,12 @@
 .App{
-  margin-top: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 200px;
-  
+  background-color: black;
+  min-height: 100vh;
+  padding-top: 20px;
+  color :white;
 }
 
 .signout{
@@ -16,8 +17,13 @@
   justify-content: space-between;
 }
 
+h1{
+  color: white;
+}
 
-
+p{
+  color:white;
+}
 
 form{
   display: flex;
@@ -40,6 +46,7 @@ input{
   justify-content: space-around;
   gap:100px;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 .password{
@@ -67,9 +74,7 @@ button{
   border-radius: 6px;
   border: none;
 
-  background: #6E6D70;
-  box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1), inset 0px 0.5px 0.5px rgba(255, 255, 255, 0.5), 0px 0px 0px 0.5px rgba(0, 0, 0, 0.12);
-  color: #DFDEDF;
+  background: #6E6D70; color: #DFDEDF;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
