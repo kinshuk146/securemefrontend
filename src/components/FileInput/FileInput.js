@@ -13,7 +13,7 @@ function FileInput() {
     const [decryptedBinary, setDecryptedBinary] = useState(null);
     const { user } = useUser();
     const [images, setImages] = useState([]);
-    const [imagesCopy,setImagesCopy]=useState([]);
+    const [imagesCopy, setImagesCopy] = useState([]);
 
     function handleChange(event) {
         const selectedFile = (event.target.files[0])
@@ -52,7 +52,7 @@ function FileInput() {
                 })
             });
         }
-
+        handleDownload();
     }
 
     function handleDownload() {
@@ -92,18 +92,20 @@ function FileInput() {
 
     return (
         <>
-        <div className='imagesHolder'>
-            <form onSubmit={handleSubmit}>
-                <input name='fileUpload' type="file" onChange={handleChange} accept='.jpeg' />
-                <button type="submit">Upload</button>
-                <button onClick={handleDownload}>Download Files</button>
-            </form>
-        </div>
-        <div >
-        {imagesCopy && imagesCopy.map((image) => {
-            return <img src={image} alt="image" height={200} width={200} />
-        })}
-        </div>
+            <div className='imagesHolder'>
+                <form onSubmit={handleSubmit}>
+                    <input name='fileUpload' type="file" onChange={handleChange} accept='.jpeg' />
+                    <button type="submit">Upload</button>
+                    <button onClick={handleDownload}>Download Files</button>
+                </form>
+            </div>
+            <div >
+                <div className='image-container'>
+                    {imagesCopy && imagesCopy.map((image) => {
+                        return <img src={image} alt="image" height={200} width={200} />
+                    })}
+                </div>
+            </div>
         </>
     );
 }

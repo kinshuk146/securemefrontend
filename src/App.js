@@ -9,21 +9,21 @@ function App() {
   return (
     <div className='App'>
       <SignedOut>
-        <h1>Welcome to Secure Me</h1>
-        <p>Secure your passwords and photos with AES encryption</p>
-        <div className=''>
-          <SignInButton />
+        <div className='signedout'>
+          <h1>Welcome to Secure Me</h1>
+          <p>Secure your passwords and photos with AES encryption</p>
+          <div className=''>
+            <SignInButton />
+          </div>
         </div>
       </SignedOut>
 
       <SignedIn>
-        <div className='signedin'>
-          <div className='password'>
-            <Password/>
-          </div>
-          <div className='file'>
-            <FileInput/>
-          </div>
+        <div className='password'>
+          <Password />
+        </div>
+        <div className='file'>
+          <FileInput />
         </div>
         <SignOutButton style={{ marginTop: '2rem' }} />
       </SignedIn>

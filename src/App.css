@@ -1,90 +1,57 @@
 .App{
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: black;
-  min-height: 100vh;
+  flex-direction: row;
   padding-top: 20px;
-  color :white;
+  padding-left: 50px;
+  padding-right: 50px;
+  justify-content: space-around;
 }
 
-.signout{
-  margin-top: 20px;
+.signedout{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
 }
 
 h1{
-  color: white;
 }
 
 p{
-  color:white;
 }
 
 form{
   display: flex;
   flex-direction: column;
   margin-bottom: 2rem;
-  gap:10px
+  gap:10px;
+  flex:1;
 }
 
 input{
-  padding: 10px 22px;
-  font-size: 15px;
-  border-radius: 10px;
-  box-sizing: border-box;  
   
 }
 
-.signedin{
-  display:flex;
-  align-items: center;
-  justify-content: space-around;
-  gap:100px;
-  flex-direction: column;
-  overflow-x: hidden;
-}
-
 .password{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  flex:1;
+
 }
 
 .file{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  align-items: center;
-  flex:1;
+  max-width: 300px;
 }
 
 button{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 6px 14px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
-  border-radius: 6px;
-  border: none;
-
-  background: #6E6D70; color: #DFDEDF;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
+  height: 20px;
 }
 
-button{
-  box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
-  outline: 0;
-}
 
 button:hover{
   cursor: pointer;
+}
+
+.image-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:10px;
 }
