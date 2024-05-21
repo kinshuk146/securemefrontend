@@ -5,6 +5,15 @@ face recognition
 file encryption
 recording encryption
 message encryption
+notes encryption
+voice call encryption
+Password generator
+file encryption
+
+Finish password project
+DSA leetcode
+DSA cp
+google cp projects internships
 
 # Getting Started with Create React App
 
