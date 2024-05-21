@@ -1,3 +1,11 @@
+Password mananger with authenticatiom and cryptogrpahy
+secret notes manager
+secret stuff
+face recognition
+file encryption
+recording encryption
+message encryption
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
